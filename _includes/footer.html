@@ -1,1 +1,12 @@
-<p style="font-size: 60%; text-align: right;">blog built using the <a href="https://github.com/jasonlong/cayman-theme">cayman-theme</a> by <a href="https://github.com/jasonlong">Jason Long</a>. <a href="http://creativecommons.org/licenses/by/4.0/">LICENSE</a></p>
+<div class="social-links">
+    {% if site.twitter_username %}
+        <a class="twitter-link" href="http://twitter.com/{{ site.twitter_username }}" target="_blank">follow @{{ site.twitter_username }}</a>
+    {% endif %}
+    
+    {% if site.github_username %}
+    <a class="github-link octicon .octicon-mark-github" href="https://github.com/{{ site.github_username }}/" target="_blank">{{ site.github_username }} on <span class="github-link octicon .octicon-mark-github"></span> </a>
+    {% endif %}
+</div>
+
+<p style="font-size: 40%; text-align: right;">blog built using modified <a href="https://github.com/jasonlong/cayman-theme">cayman-theme</a> by <a href="https://github.com/jasonlong">Jason Long</a>. <a href="http://creativecommons.org/licenses/by/4.0/">LICENSE</a></p>
+ 
