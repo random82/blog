@@ -23,7 +23,7 @@ I've started with writting a function that runs a single simulation.
 def runSimulation(numViruses, maxPop, maxBirthProb, clearProb,
                   resistances, mutProb, numStepsBeforeDrug, numStepsAfterDrug):
     
-    # Lots of happening in here    
+    # Lots of stuff happening in here - removed for brevity
     return (numViruses, numResistantViruses)
 ```
 
