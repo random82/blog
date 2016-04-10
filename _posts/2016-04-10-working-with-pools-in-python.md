@@ -17,7 +17,7 @@ and executed in a single thread.
 I started to explore how to use Python multiprocessing library to utilise all of my CPUs to get the results faster.
 
 ## Base solution
-I've started with writting a function that runs a single simulation run.
+I've started with writting a function that runs a single simulation.
 
 ```python
 def runSimulation(numViruses, maxPop, maxBirthProb, clearProb,
@@ -27,7 +27,7 @@ def runSimulation(numViruses, maxPop, maxBirthProb, clearProb,
     return (numViruses, numResistantViruses)
 ```
 
-I call this function in a trivial way:
+I call this function in a sequential manner:
 
 ```python
 def simulate(numTrials):
@@ -76,7 +76,7 @@ if __name__ == '__main__':
 ```
 
 Pool method `map` seemed to be a good choice - it takes an iterable and executes
-a function, passes in the first argument, for each of items in the iterable. 
+a function, passed in the first argument, for each of items in the iterable. 
 
 ## Mapping arguments
 My function accepted 8 arguments and I wanted exactly N runs with the same arguments 
