@@ -73,7 +73,7 @@ if __name__ == '__main__':
     print result.get(timeout=1)           # raises multiprocessing.TimeoutError
 ```
 
-Pool method ```map``` seemed to be a good choice - it takes an iterable and executes
+Pool method `map` seemed to be a good choice - it takes an iterable and executes
 a function, passes in the first argument, for each of items in the iterable. 
 
 ## Mapping arguments
@@ -115,7 +115,7 @@ def runParallel(args, num_trials):
 
 ```
 
-I modified my main ```simulate``` function to use the function above
+I modified my main `simulate` function to use the function above
 
 ```python
 
@@ -139,11 +139,11 @@ def simulate(numTrials):
 
 ##Executing simulations
 
-In my sequential approach I just dropped a call to the ```simulate``` method 
+In my sequential approach I just dropped a call to the `simulate` method 
 to the bottom of my file and used VSCode or IDLE to run it.
 
 After modifying my execution model to parallel - my code just hanged. 
-I spent few hours checking different samples of using ```multiprocessing``` library
+I spent few hours checking different samples of using `multiprocessing` library
 and some of them ran nicely while other hanged, finally I found what was the problem.
 
 As stated in [Programming guildelines - Windows](https://docs.python.org/2.7/library/multiprocessing.html#windows)
