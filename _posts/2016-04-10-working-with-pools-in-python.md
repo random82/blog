@@ -149,7 +149,8 @@ and some of them ran nicely while other hanged, finally I found what was the pro
 As stated in [Programming guildelines - Windows](https://docs.python.org/2.7/library/multiprocessing.html#windows)
 we need to make sure that the main module can be safely imported by protecting the “entry point” of the program 
 
-So, instead of
+So, instead of:
+
 ```python
 simulate(100)
 
@@ -163,4 +164,4 @@ if __name__ == '__main__':
     
 ``` 
 
-\* and read docos before copy-pasting solution from internet  
+\* and read docos before spending hours debugging solutions from the internet  
