@@ -137,7 +137,8 @@ def simulate(numTrials):
     # Plotting results - removed for brevity
 ``` 
 
-##Executing simulations
+
+## Executing simulations
 
 In my sequential approach I just dropped a call to the `simulate` method 
 to the bottom of my file and used VSCode or IDLE to run it.
