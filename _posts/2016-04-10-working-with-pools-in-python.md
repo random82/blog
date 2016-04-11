@@ -93,7 +93,7 @@ from multiprocessing import Pool
 ```
 
 Next, I've created a wrapper that will help me pass [a packed argument list](https://docs.python.org/2/tutorial/controlflow.html#unpacking-argument-lists)
-pass it to a simulation runs in a positional manner: 
+to individual simulation runs in a positional manner: 
 
 ```python
 def runSimulationWrapper(args):
@@ -117,7 +117,7 @@ def runParallel(args, num_trials):
 
 ```
 
-I modified my main `simulate` function to use the function above
+I modified my main `simulate` function to use the parallel execution function above
 
 ```python
 
@@ -142,7 +142,7 @@ def simulate(numTrials):
 
 ## Executing simulations
 
-In my sequential approach I just dropped a call to the `simulate` method 
+Initially, for my sequential approach I just dropped a call to the `simulate` method 
 to the bottom of my file and used VSCode or IDLE to run it.
 
 After modifying my execution model to parallel - my code just hanged. 
