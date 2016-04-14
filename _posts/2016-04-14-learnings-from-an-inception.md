@@ -6,7 +6,7 @@ categories: agile inception
 ---
 
 # Agile is simple but not easy
-When I was learing about Agile and people around were saying it is simple but not easy 
+When I was learning about Agile and people around were saying it is simple but not easy 
 my initial reaction was "yeah, right, what can be hard with harnessing few 
 common sense principles?"
 After some time in this space. Once again I was reminded why I was wrong.
