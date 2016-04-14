@@ -32,6 +32,7 @@ After 2 hours, most of room energy was gone, some people were still arguing abou
 and we had to cut the discussion.
 
 Learnings from today:
+
 * Clearly express what is an expected outcome of a workshop you facilitate
 * Set up and communicate a timebox for an excercise - duh!
 * Even most bulletproof ideas have to be practiced
