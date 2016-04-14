@@ -12,7 +12,7 @@ common sense principles?"
 After some time in this space. Once again I was reminded why I was wrong.
 
 Agile is simple, principles are simple, frameworks are relatively lightweight, and come one, 
-it's just a common sense - isn't it? Yes, but this common sense is being constantly
+it's just a common sense - isn't it? Yes, it is. But this common sense is being constantly
 challenged by a human factor, by all those people with great ideas and good intentions
 thinking about the same thing - in a different way. That makes it really hard to master.
 
@@ -22,8 +22,8 @@ I wanted to come with some new idea how to do it - I've done my homework, read a
 In fact whe I was reading that chapter I thought - "wow, that is bulletproof".
 Couldn't be more wrong.
 
-After over 2 hours of very vivid brainstorming, the team came with a both definitions.
-In between I felt like we were going circles, opening closed doors and throwning more and more
+After over 2 hours of a very vivid brainstorming, the team came with both definitions.
+In between, I felt like we were going circles, opening closed doors and throwing more and more
 ideas that were increasing complexity of our definitions. On the other hand, I'm not sure if
 confidence put in them was growing along with increasing complexity.
 
@@ -35,6 +35,7 @@ Learnings from today:
 
 * Clearly express what is an expected outcome of a workshop you facilitate
 * Set up and communicate a timebox for an excercise - duh!
+* It's an Agile - we can (and should) improve our definitions over time. Finding the best one on a day 1 makes no sense.
 * Even most bulletproof ideas have to be practiced
 * Don't worry, clear your head, talk to people about how they found your facilitation and do better next time
 * Get a coach or a mentor - it helps a lot when you can challenge your ideas with someone experienced (even after the fact)
