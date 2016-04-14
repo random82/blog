@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Learnings from project inception
+title:  Learnings from a project inception
 date:   2016-04-14 21:53:18 +1100
 categories: agile inception
 ---
