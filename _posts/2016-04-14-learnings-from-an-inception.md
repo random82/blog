@@ -35,7 +35,7 @@ Learnings from today:
 
 * Clearly express what is an expected outcome of a workshop you facilitate
 * Set up and communicate a timebox for an excercise - duh!
-* It's an Agile - we can (and should) improve our definitions over time. Finding the best one on a day 1 makes no sense.
+* It's an Agile - start small and improve your definitions over time. Finding the best one on a day 1 makes no sense.
 * Even most bulletproof ideas have to be practiced
 * Don't worry, clear your head, talk to people about how they found your facilitation and do better next time
 * Get a coach or a mentor - it helps a lot when you can challenge your ideas with someone experienced (even after the fact)
