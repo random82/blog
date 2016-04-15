@@ -34,7 +34,7 @@ and we had to cut the discussion.
 Learnings from today:
 
 * Clearly express what is an expected outcome of a workshop you facilitate
-* Set up and communicate a timebox for an excercise - duh!
+* Set up and communicate a timebox for an exercise - duh!
 * It's an Agile - start small and improve your definitions over time. Finding the best one on a day 1 makes no sense.
 * Even most bulletproof ideas have to be practiced
 * Don't worry, clear your head, talk to people about how they found your facilitation and do better next time
