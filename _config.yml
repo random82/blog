@@ -17,6 +17,8 @@ url: "http://devblog.xyz" # the base hostname & protocol for your site
 twitter_username: DominikRan
 github_username:  Random82
 
+google_analytics: UA-63511504-2
+
 gems: [jekyll-paginate]
 
 # Build settings
