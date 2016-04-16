@@ -19,7 +19,7 @@ thinking about the same thing - in a different way. That makes it really hard to
 So, I was facilitating an activity today focused on creating a *Definition of Done* and 
 a *Definition of Ready* for my new team. Session was supposed to take 30 minutes.
 I wanted to come with some new idea how to do it - I've done my homework, read a nice chapter about helping a team in building a *Definition of Done*.
-In fact whe I was reading that chapter I thought - "wow, that is bulletproof".
+In fact when I was reading that chapter I thought - "wow, that is bulletproof".
 Couldn't be more wrong.
 
 After over 2 hours of a very vivid brainstorming, the team came with both definitions.
@@ -27,7 +27,7 @@ In between, I felt like we were going circles, opening closed doors and throwing
 ideas that were increasing complexity of our definitions. On the other hand, I'm not sure if
 confidence put in them was growing along with increasing complexity.
 
-Could we have a simple deinfition that would help us go in the first sprint? I don't know.
+Could we have a simple definition that would help us go in the first sprint? I don't know.
 After 2 hours, most of room energy was gone, some people were still arguing about semantics
 and we had to cut the discussion.
 
