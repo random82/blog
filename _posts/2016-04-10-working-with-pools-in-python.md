@@ -6,7 +6,7 @@ categories: python parallel
 ---
 
 # Problem - long running single-threaded simulations
-I was writting a simulation for the [6.00.2x - Introduction to Computational Thinking 
+I was writing a simulation for the [6.00.2x - Introduction to Computational Thinking 
 and Data Science by MITx on EDX](https://www.edx.org/course/introduction-computational-thinking-data-mitx-6-00-2x-3).
 One of problem sets required a simulation to be run few hundred times to collect enough samples.
 It took 4-5 minutes to get results for few hundred trials. 
@@ -14,7 +14,8 @@ It took 4-5 minutes to get results for few hundred trials.
 The base version of the simulation was written in Python 2.7
 and executed in a single thread.
 
-I started to explore how to use Python multiprocessing library to utilise all of my CPUs to get the results faster.
+I started to explore how to use Python multiprocessing library to utilise all of my CPUs 
+to get the results faster.
 
 ## Base solution
 I've started with writting a function that runs a single simulation.
@@ -81,7 +82,7 @@ a function, passed in the first argument, for each of items in the iterable.
 ## Mapping arguments
 My function accepted 8 arguments and I wanted exactly N runs with the same arguments 
 to be performed. Also I wanted my parallel execution pattern to be universal -
-few more excercises to go and I had to write separate simulation functions 
+few more exercises to go and I had to write separate simulation functions 
 for other scenarios.
 
 ### Simple wrapper

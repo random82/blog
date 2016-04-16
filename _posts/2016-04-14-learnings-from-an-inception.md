@@ -28,7 +28,7 @@ ideas that were increasing complexity of our definitions. On the other hand, I'm
 confidence put in them was growing along with increasing complexity.
 
 Could we have a simple definition that would help us go in the first sprint? I don't know.
-After 2 hours, most of room energy was gone, some people were still arguing about semantics
+After 2 hours, most of the room energy was gone, some people were still arguing about semantics
 and we had to cut the discussion.
 
 Learnings from today:
