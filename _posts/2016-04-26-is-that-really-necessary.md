@@ -6,8 +6,8 @@ categories: continuous improvement kaizen
 ---
 
 # So, I've noticed you're working on...
-Imagine a scenario when you work up in a leading technical company. You're surrounded by passionate people who love what they do, 
-they are eager to try cool stuff and they quickly turn their visions into action.
+Imagine a scenario when you're surrounded by skilful, passionate people who love what they do, 
+they are eager to try cool stuff and they quickly turn their visions into outcomes.
 
 Similar scenario: a development team that had been recently enabled and 
 is taking an ownership of more and more things. They're excited about doing things differently
