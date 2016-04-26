@@ -92,6 +92,6 @@ Team work on improvements adds up to team commitments and we would like to be tr
 * Prioritise work
 * Don't overthink your problems
 * Keep changes small and lightweight - smaller, simpler pieces will be adapted faster
-* Limit your improvement WIP - don't overwhelm everyone by number of changes
+* Limit your improvement WIP - don't overwhelm everyone with number of changes
 * Be patient, you'll get there
 * Get things done
