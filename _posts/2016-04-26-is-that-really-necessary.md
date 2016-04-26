@@ -51,7 +51,7 @@ We'll talk to the team, hopefully we will find some space to work on them in the
 
 >*\- Have you done your homework? Not yet, I have to check on something in the Internet first*
 
-Working on new stuff is exciting. It keeps us motivated. The problem is - sometimes it 
+Working on a new stuff is exciting. It keeps us motivated. The problem is - sometimes it 
 keeps us distracted from our main commitments. The bigger problem is - sometimes 
 these activities are hidden from a product owner, and sometimes they are even hidden from a team.
 Lurking in a shadow of secrets till our internal change agent finishes its work 
@@ -61,7 +61,7 @@ Guns still blazing, eyes full of passion, ready to show **the latest improvement
 there is no one to listen... The rest of the team is busy with working on features, 
 and they had more to do because one of their team members didn't communicate about his ideas and plans.
 
-Sometimes working on features may not be the most exciting things we do given all new tools and 
+Sometimes working on features is not the most exciting things we do given all new tools and 
 practices around us. However, we can't use an **improvement** as an excuse from doing a work that the 
 rest of the team committed to deliver. Also we can't hide our commitments from the team.
 
