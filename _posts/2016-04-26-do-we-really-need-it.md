@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Is that really necessary? 
+title:  Do we really need it right now? 
 date:   2016-04-26 01:53:18 +1100
 categories: continuous improvement kaizen
 ---
@@ -18,7 +18,7 @@ People around you keep trying new stuff, configuring more tools and working on *
 happy faces
 
 Awesome! Right?
-Well, it depends. The question worth asking is: *is that improvement really necessary right now?*
+Well, it depends. The question worth asking is: *do we really need that improvement right now?*
 
 Example:
 
