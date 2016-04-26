@@ -6,13 +6,16 @@ categories: continuous improvement kaizen
 ---
 
 # So, I've noticed you're working on...
-Imagine a scenario when you're surrounded by skilful, passionate people who love what they do, 
+Imagine a scenario - you're surrounded by passionate people who love what they do, 
 they are eager to try cool stuff and they quickly turn their visions into outcomes.
 
-Similar scenario: a development team that had been recently enabled and 
-is taking an ownership of more and more things. They're excited about doing things differently
+Similar scenario - a development team that had been recently enabled and 
+is taking an ownership of more things. They're excited about doing things differently
 Not only in development but infrastructure, automation, process changes and 
-everything else that they can touch. 
+everything else that they can put their hands on. 
+
+People around you keep trying new stuff, configuring more tools and working on *improvements* with
+happy faces
 
 Awesome! Right?
 Well, it depends. The question worth asking is: *is that improvement really necessary right now?*
