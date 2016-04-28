@@ -23,27 +23,26 @@ Well, it depends. The question worth asking is: *do we really need that improvem
 Example:
 
 >*\- Hey, I've noticed you're were working last 3 days on our new release tool...*
-
+>
 >*\- Sure! We are doing most of the stuff in the old way that holds us back. Thanks to what 
 I'm after we will help us to have better control on our release frequency.
-It covers builds, deployments, automated testing and all you need to do is to push a single button* 
-
+It covers builds, deployments, automated testing with a single push of a button* 
+>
 >*\- That's cool, but it looks like we're far away from our sprint goal and we made commitments.
 You've been there with us when we planned the sprint...
-BTW - Are you sure we need all of these now?
-*
-
+BTW - Are you sure we need all of these now?*
+>
 >*\- So, you don't want me to work on improvements?! We need to improve things! 
 Sooner or later we'll need them!*
-
+>
 >*\- You're right and I like your commitment, there will be no value of having any improvement when we fail in delivering features...*
-
+>
 >*\- So, should I drop what I'm doing?*
-
+>
 >*\- Let me think... How much it takes to have proper builds? Our current setup is painful...*
-
->*\- I already got it covered *
-
+>
+>*\- I already got it covered*
+>
 >*\- Awesome! Let's use this part for now and make sure you put rest of your ideas to the backlog.
 We'll talk to the team, hopefully we will find some space to work on them in the next sprint*
 
@@ -77,7 +76,7 @@ They can be also expressed as user stories
 
 A very naive example could be:
 
->\-* As a product owner I want to release daily to get users feedback more frequently*
+>\-*As a product owner I want to release daily to get users feedback more frequently*
 
 We can manage improvements with a backlog. Ideally it should be the same backlog that team uses for 
 a product or their work stream. It will help with keeping things transparent and trigger discussions 
