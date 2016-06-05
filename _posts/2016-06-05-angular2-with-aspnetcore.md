@@ -185,9 +185,9 @@ TODO: Image
 
 ## Put you Angular2 application inside your ASP.NET Core MVC app
 
-### Modify _Layout.chtml
+### Modify Views\\Shared\\_Layout.cshtml
 
-```Razor
+```razor
 <body>
     @RenderBody()
 
@@ -211,3 +211,18 @@ TODO: Image
     @RenderSection("scripts", required: false)
 </body>
 ```
+
+### Modify Views\\Home\\Index.cshtml
+
+```razor
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<my-app>Loading my app</my-app>
+```
+
+## Troubleshooting
+
+If you application does not appear correctly, check if NPM dependencies are properly loaded.
+Try running `gulp publish` from the root folder of your web application after VS rebuild. Sometimes Visual Studio build does not execute gulp tasks correctly
