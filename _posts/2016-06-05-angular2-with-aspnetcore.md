@@ -28,11 +28,11 @@ For this guide I was using Visual Studio 2015 Update 2. Given how quickly **dotn
 
 ## Create new ASP.NET Core MVC application
 
-![Create project with Visual Studio](~/img/Angular2-CreateProject.PNG)
+![Create new project with Visual Studio](../img/Angular2-CreateProject.PNG)
 
+![Select Web Application](../img/Angular2-CreateProject2.PNG)
 
-TODO: Images here
-
+![Web Application - default folder structure](../img/Angular2-DefaultFolders.PNG)
 
 ## Modify gulpfile.js in the project folder
 
@@ -198,7 +198,7 @@ Create a **tsconfig.json** file in the root directory of your web application pr
 
 Rebuild the project with Visual Studio. If everything is configured correctly, you should be able to see generated JS files in the VIsual Studio
 
-TODO: Image
+![Succesful TypeScript transpilation](../img/Angular2-typescript-build.png)
 
 ## Put you Angular2 application inside your ASP.NET Core MVC app
 
