@@ -5,7 +5,7 @@ date:   2016-06-05 02:26:18 +1100
 categories: angular2, visual studio, dotnet core, ASP.NET Core
 ---
 
-# How to configure Angular2 to work with ASP.NET Core application
+# Angular2 with ASP.NET Core - Step-by-step guide
 
 ## Create new ASP.NET Core MVC application
 
@@ -48,40 +48,40 @@ gulp.task("clean", ["clean:js", "clean:css", "clean:npmlib"]);
 
 ### Add copy tasks for Angular modules and dependencies
 
-```
+```javascript
 gulp.task("copy:systemjs", function () {
     return gulp.src(paths.npmLibSrc + '/systemjs/dist/**/*.*', { base: paths.npmLibSrc + '/systemjs/dist/' })
-         .pipe(gulp.dest(paths.npmLibDest + '/systemjs/dist/'));
+        .pipe(gulp.dest(paths.npmLibDest + '/systemjs/dist/'));
 });
- 
+
 gulp.task("copy:angular2", function () {
     return gulp.src(paths.npmLibSrc + '/@angular/**/*.js', { base: paths.npmLibSrc + '/@angular/' })
-         .pipe(gulp.dest(paths.npmLibDest + '/@angular/'));
+        .pipe(gulp.dest(paths.npmLibDest + '/@angular/'));
 });
- 
+
 gulp.task("copy:core-js", function () {
     return gulp.src(paths.npmLibSrc + '/core-js/**/*min.js', { base: paths.npmLibSrc + '/core-js/' })
-         .pipe(gulp.dest(paths.npmLibDest + '/core-js/'));
+        .pipe(gulp.dest(paths.npmLibDest + '/core-js/'));
 });
- 
+
 gulp.task("copy:rxjs", function () {
     return gulp.src(paths.npmLibSrc + '/rxjs/**/*.js', { base: paths.npmLibSrc + '/rxjs/' })
-         .pipe(gulp.dest(paths.npmLibDest + '/rxjs/'));
+        .pipe(gulp.dest(paths.npmLibDest + '/rxjs/'));
 });
 
 gulp.task("copy:zone.js", function () {
     return gulp.src(paths.npmLibSrc + '/zone.js/dist/*.*', { base: paths.npmLibSrc + '/zone.js/dist/' })
-         .pipe(gulp.dest(paths.npmLibDest + '/zone.js/dist/'));
+        .pipe(gulp.dest(paths.npmLibDest + '/zone.js/dist/'));
 });
 
 gulp.task("copy:angular-in-memory", function () {
     return gulp.src(paths.npmLibSrc + '/angular2-in-memory-web-api/*.js', { base: paths.npmLibSrc + '/angular2-in-memory-web-api/' })
-         .pipe(gulp.dest(paths.npmLibDest + '/angular2-in-memory-web-api/'));
+        .pipe(gulp.dest(paths.npmLibDest + '/angular2-in-memory-web-api/'));
 });
 
 gulp.task("copy:reflect-metadata", function () {
     return gulp.src(paths.npmLibSrc + '/reflect-metadata/*.*', { base: paths.npmLibSrc + '/reflect-metadata/' })
-         .pipe(gulp.dest(paths.npmLibDest + '/reflect-metadata/'));
+        .pipe(gulp.dest(paths.npmLibDest + '/reflect-metadata/'));
 });
 ```
 
@@ -115,28 +115,25 @@ gulp.task("publish", ["min", "copy-dep"]);
 
 ## Configure SystemJS
 
-
 ```javascript
-
 /**
  * System configuration for Angular 2 samples
  * Adjust as necessary for your application needs.
  */
 (function(global) {
-  // map tells the System loader where to look for things
+// map tells the System loader where to look for things
 
 var libFolder = 'lib/npm/';
 
-  var map = {
+var map = {
     'app':                        'app', // 'dist',
     '@angular':                   libFolder + '@angular',
     'angular2-in-memory-web-api': libFolder + 'angular2-in-memory-web-api',
     'rxjs':                       libFolder + 'rxjs'
-  };
+};
 
-  /* Removed for brevity */
+/* Removed for brevity */
 })(this);
-
 ```
 
 ## Create Angular2 application
@@ -146,8 +143,8 @@ var libFolder = 'lib/npm/';
 ```typescript
 import { Component } from '@angular/core';
 @Component({
-  selector: 'my-app',
-  template: '<h1>My First Angular 2 App</h1>'
+    selector: 'my-app',
+    template: '<h1>My First Angular 2 App</h1>'
 })
 export class AppComponent { }
 ```
@@ -166,16 +163,16 @@ Create a **tsconfig.json** file in the root directory of your web application pr
 
 ```typescript
 {
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "removeComments": false,
-    "noImplicitAny": false
-  }
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "removeComments": false,
+        "noImplicitAny": false
+    }
 }
 ```
 
@@ -204,8 +201,8 @@ TODO: Image
             System.import('app').catch(function(err){ console.error(err); });
         </script>
     </environment>
-    <environment names="Staging,Production">        
-       
+    <environment names="Staging,Production">
+
     </environment>
 
     @RenderSection("scripts", required: false)
@@ -215,11 +212,12 @@ TODO: Image
 ### Modify Views\\Home\\Index.cshtml
 
 ```razor
-@{
-    ViewData["Title"] = "Home Page";
-}
 
-<my-app>Loading my app</my-app>
+    @{
+        ViewData["Title"] = "Home Page";
+    }
+
+    <my-app>Loading my app</my-app>
 ```
 
 ## Troubleshooting
