@@ -112,3 +112,71 @@ gulp.task("publish", ["min", "copy-dep"]);
     }
 }
 ```
+
+## Configure SystemJS
+
+
+```javascript
+
+/**
+ * System configuration for Angular 2 samples
+ * Adjust as necessary for your application needs.
+ */
+(function(global) {
+  // map tells the System loader where to look for things
+
+var libFolder = 'lib/npm/';
+
+  var map = {
+    'app':                        'app', // 'dist',
+    '@angular':                   libFolder + '@angular',
+    'angular2-in-memory-web-api': libFolder + 'angular2-in-memory-web-api',
+    'rxjs':                       libFolder + 'rxjs'
+  };
+
+  /* Removed for brevity */
+})(this);
+
+```
+
+## Create Angular2 application
+
+### app.component.ts
+
+```typescript
+import { Component } from '@angular/core';
+@Component({
+  selector: 'my-app',
+  template: '<h1>My First Angular 2 App</h1>'
+})
+export class AppComponent { }
+```
+
+### main.ts
+
+```typescript
+import { bootstrap }    from '@angular/platform-browser-dynamic';
+import { AppComponent } from './app.component';
+bootstrap(AppComponent);
+```
+
+## Configure TypeScript transpiler
+
+Create a **tsconfig.json** file in the root directory of your web application project
+
+```typescript
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false
+  }
+}
+```
+
+Rebuild the project with Visual Studio. If everything is configured correctly, you should be able to see generated JS files in the VIsual Studio
