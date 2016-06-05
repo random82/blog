@@ -212,12 +212,11 @@ TODO: Image
 ### Modify Views\\Home\\Index.cshtml
 
 ```razor
+@{
+    ViewData["Title"] = "Home Page";
+}
 
-    @{
-        ViewData["Title"] = "Home Page";
-    }
-
-    <my-app>Loading my app</my-app>
+<my-app>Loading my app</my-app>
 ```
 
 ## Troubleshooting
