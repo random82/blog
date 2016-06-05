@@ -2,7 +2,7 @@
 layout: post
 title:  Configuring Angular2 with ASP.NET Core 
 date:   2016-06-05 02:26:18 +1100
-categories: angular2, web development
+categories: angular2, visual studio, dotnet core, ASP.NET Core
 ---
 
 # How to configure Angular2 to work with ASP.NET Core application
@@ -180,3 +180,34 @@ Create a **tsconfig.json** file in the root directory of your web application pr
 ```
 
 Rebuild the project with Visual Studio. If everything is configured correctly, you should be able to see generated JS files in the VIsual Studio
+
+TODO: Image
+
+## Put you Angular2 application inside your ASP.NET Core MVC app
+
+### Modify _Layout.chtml
+
+```Razor
+<body>
+    @RenderBody()
+
+    <environment names="Development">
+
+        <!-- Polyfill(s) for older browsers -->
+        <script src="~/lib/npm/core-js/client/shim.min.js"></script>
+        <script src="~/lib/npm/zone.js/dist/zone.js"></script>
+        <script src="~/lib/npm/reflect-metadata/Reflect.js"></script>
+        <script src="~/lib/npm/systemjs/dist/system.src.js"></script>
+        <!-- 2. Configure SystemJS -->
+        <script src="systemjs.config.js"></script>
+        <script>
+            System.import('app').catch(function(err){ console.error(err); });
+        </script>
+    </environment>
+    <environment names="Staging,Production">        
+       
+    </environment>
+
+    @RenderSection("scripts", required: false)
+</body>
+```
