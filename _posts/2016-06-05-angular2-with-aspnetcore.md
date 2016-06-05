@@ -7,9 +7,29 @@ categories: angular2, visual studio, dotnet core, ASP.NET Core
 
 # Angular2 with ASP.NET Core - Step-by-step guide
 
+## Intro
+
+This guide is created on a basis of [Angular 2 - Quickstart](https://angular.io/docs/ts/latest/quickstart.html#)
+You can refer to the **Angular2 - Quickstart** guide to check exact contents of application and configuration files.
+
+I was using following versions
+```
+λ node -v 
+v5.1.0
+λ npm -v
+3.3.12
+λ dotnet --version
+1.0.0-preview1-002702
+```
+
+
+For this guide I was using Visual Studio 2015 Update 2. Given how quickly **dotnetcore** changes some steps may look diffrently
+
+
 ## Create new ASP.NET Core MVC application
 
-I was using Visual Studio 2015 Update 2, given quick changes to the **dotnetcore** this step may look diffrently
+![Create project with Visual Studio](~/img/Angular2-CreateProject.PNG)
+
 
 TODO: Images here
 
