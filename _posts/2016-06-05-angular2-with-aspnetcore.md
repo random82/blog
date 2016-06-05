@@ -28,15 +28,26 @@ For this guide I was using Visual Studio 2015 Update 2. Given how quickly **dotn
 
 ## Create new ASP.NET Core MVC application
 
+Create a new ASP.NET Core Web Application project using Visual Studio
+
 ![Create new project with Visual Studio](../img/Angular2-CreateProject.PNG)
 
+Select Web Application template
+
 ![Select Web Application](../img/Angular2-CreateProject2.PNG)
+
+You should be able to see a similar folder structure being created. I will use this folder structure to add and deploy an Angular2 application.
 
 ![Web Application - default folder structure](../img/Angular2-DefaultFolders.PNG)
 
 ## Modify gulpfile.js in the project folder
 
+Angular2 Quickstart recommends using NPM to manage Angular libraries. I'm going to stick with it.
+However, ASP.NET Core application we just created stores front end inside **wwwroot** folder. I'm going to keep it this way and use **Gulp** to move dependencies around
+
 ### Add npm folders to gulpfile
+
+Inside **gulpfile.js** you fill find paths variable. We have to modify it to keep source and destination folders of our new dependencies. 
 
 ```javascript
 var paths = {
@@ -54,19 +65,23 @@ var paths = {
 
 ### Add clean task for npm folders
 
+The next step would be to use the destination folder we just added to paths and add a new clean task for Gulp which will delete dependencies when we need to refresh our application. 
+
 ```javascript
 gulp.task("clean:npmlib", function (cb) {
     rimraf(paths.npmLibDest, cb);
 });
 ```
 
-### Add new clean task as a global clean task dependency
+Now, we have to add the new clean task as a global clean task dependency.
 
 ```javascript
 gulp.task("clean", ["clean:js", "clean:css", "clean:npmlib"]);
 ```
 
-### Add copy tasks for Angular modules and dependencies
+### Create copy tasks for Angular modules and dependencies
+
+In order to move Angular dependencies from **node_module** folder in our project root folder to our **wwwroot** folder we need to copy required dependencies.
 
 ```javascript
 gulp.task("copy:systemjs", function () {
@@ -105,7 +120,7 @@ gulp.task("copy:reflect-metadata", function () {
 });
 ```
 
-### Group Angular copy tasks and create publish task
+Once the copy tasks are created, we can group them.
 
 ```javascript
 gulp.task('copy-dep',
@@ -116,12 +131,21 @@ gulp.task('copy-dep',
     'copy:zone.js',
     'copy:reflect-metadata',
     'copy:angular-in-memory']);
+```
 
+Now, we can create a new task we will use for publishing our front end app.
+It will run the default **min** task and **copy-dep** we've just created.
+
+```javascript
 gulp.task("publish", ["min", "copy-dep"]);
 ```
 
+From this point we can run `gulp publish` from the root folder of our project to update front end application files.
+
 
 ### Upgrade project.json file with new tasks
+
+In order to include our new gulp tasks in the Visual Studio build script, we need to modify **project.json** file prepublish scripts.
 
 ```javascript
 {
@@ -133,7 +157,12 @@ gulp.task("publish", ["min", "copy-dep"]);
 }
 ```
 
+At this point we should have all our dependencies put in the right place and we can start configuring Angular2 to build our application.
+
 ## Configure SystemJS
+
+In order to configure SystemJS we need to create a **systemjs.config.js** file inside **wwwroot** folder.
+I used SystemJS configuration file from **Angular2 - Quickstart** guide. However, in order to load files from a **wwwroot** folder it has to be modified respectively. 
 
 ```javascript
 /**
@@ -157,6 +186,10 @@ var map = {
 ```
 
 ## Create Angular2 application
+
+Now, it's time to start building our Angular2 application.
+Since the purpose of this guide is to walk through the integrations with
+ASP.NET Core application I will be using sample files from [Angular 2 - Quickstart](https://angular.io/docs/ts/latest/quickstart.html#)
 
 ### app.component.ts
 
@@ -200,7 +233,7 @@ Rebuild the project with Visual Studio. If everything is configured correctly, y
 
 ![Succesful TypeScript transpilation](../img/Angular2-typescript-build.png)
 
-## Put you Angular2 application inside your ASP.NET Core MVC app
+## Embed your Angular2 application in your ASP.NET Core MVC app
 
 ### Modify Views\\Shared\\_Layout.cshtml
 
