@@ -235,7 +235,12 @@ Rebuild the project with Visual Studio. If everything is configured correctly, y
 
 ## Embed your Angular2 application in your ASP.NET Core MVC app
 
+Now it's time to embed our Angular2 component in a Razor view so it will be served by our ASP.NET Core MVC application.
+In order to do it, we'll modify the default layout file to load the libraries required by Angular2.
+
 ### Modify Views\\Shared\\_Layout.cshtml
+
+Inside **_Layout.cshtml** file, find the `<body>` element and replace it with the one below. 
 
 ```razor
 <body>
@@ -264,6 +269,12 @@ Rebuild the project with Visual Studio. If everything is configured correctly, y
 
 ### Modify Views\\Home\\Index.cshtml
 
+For the purpose of this guide I'll be using the **home\index.cshtml** view that is being load
+when we navigate to the root URL of our web app.
+
+In order to load your **Angular2 component** just simply replace the content of the **home\index.cshtml** 
+file with snippet below.
+
 ```razor
 @{
     ViewData["Title"] = "Home Page";
@@ -271,6 +282,13 @@ Rebuild the project with Visual Studio. If everything is configured correctly, y
 
 <my-app>Loading my app</my-app>
 ```
+
+## Try your application
+
+Run your application using Visual Studio, if everything is configured properly your default 
+browser should get opened with a new home index view like this:
+
+![Hello Angular 2](../img/Angular2-HelloAngular2.PNG)
 
 ## Troubleshooting
 
