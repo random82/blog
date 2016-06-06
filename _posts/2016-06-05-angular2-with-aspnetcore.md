@@ -22,7 +22,7 @@ v5.1.0
 1.0.0-preview1-002702
 ```
 
-On top of that I'm using Visual Studio 2015 Update 2. Given how quickly **dotnetcore** changes some steps may look diffrently
+On top of that I'm using Visual Studio 2015 Update 2. Given how quickly **dotnetcore** changes, some steps may look diffrently
 
 ## Step 1 - Create new ASP.NET Core MVC application
 
@@ -233,8 +233,8 @@ Rebuild the project with Visual Studio. If everything is configured correctly, y
 
 ## Step 6 - Embed your Angular2 application in your ASP.NET Core MVC app
 
-Now it's time to embed our Angular2 component in a Razor view so it will be served by our ASP.NET Core MVC application.
-In order to do it, we'll modify the default layout file to load the libraries required by Angular2.
+Now it's time to embed our Angular2 component in a Razor view so it will be served by the ASP.NET Core MVC application.
+In order to do it, we'll modify the default layout file to load all the libraries required by Angular2.
 
 ### Modify Views\\Shared\\_Layout.cshtml
 
