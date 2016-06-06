@@ -13,6 +13,7 @@ This guide is created on a basis of [Angular 2 - Quickstart](https://angular.io/
 You can refer to the **Angular2 - Quickstart** guide to check exact contents of application and configuration files.
 
 In this guide I'm using following versions:
+
 ```
 λ node -v 
 v5.1.0
@@ -240,7 +241,8 @@ Create a **tsconfig.json** file in the root directory of your web application pr
 }
 ```
 
-Rebuild the project with Visual Studio. If everything is configured correctly, you should be able to see generated JS files in the VIsual Studio
+Rebuild the project with Visual Studio. If everything is configured correctly,
+you should be able to see generated JS files in the Visual Studio
 
 ![Succesful TypeScript transpilation](../img/Angular2-typescript-build.png)
 
