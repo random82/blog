@@ -244,7 +244,7 @@ Create a **tsconfig.json** file in the root directory of your web application pr
 Rebuild the project with Visual Studio. If everything is configured correctly,
 you should be able to see generated JS files in the Visual Studio
 
-![Succesful TypeScript transpilation](../img/Angular2-typescript-build.png)
+![Succesful TypeScript transpilation](../img/Angular2-typescript-build.PNG)
 
 ## Step 6 - Embed your Angular2 application in your ASP.NET Core MVC app
 
