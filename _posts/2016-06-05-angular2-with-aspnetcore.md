@@ -22,30 +22,35 @@ v5.1.0
 1.0.0-preview1-002702
 ```
 
-On top of that I'm using Visual Studio 2015 Update 2. Given how quickly **dotnetcore** changes, some steps may look diffrently
+On top of that I'm using Visual Studio 2015 Update 2. Given how quickly **dotnetcore** changes, some steps may look differently.
 
 ## Step 1 - Create new ASP.NET Core MVC application
 
-Create a new ASP.NET Core Web Application project using Visual Studio
+Create a new ASP.NET Core Web Application project using Visual Studio.
 
 ![Create new project with Visual Studio](../img/Angular2-CreateProject.PNG)
 
-Select Web Application template
+Select Web Application template.
 
 ![Select Web Application](../img/Angular2-CreateProject2.PNG)
 
-You should be able to see a similar folder structure being created. I will use this folder structure to add and deploy an Angular2 application.
+You should be able to see a similar folder structure being created.
 
 ![Web Application - default folder structure](../img/Angular2-DefaultFolders.PNG)
 
+We're going to use this folder structure when configuring Angular2 dependencies and the application itself.
+
 ## Step 2 - Modify gulpfile.js in the project folder
 
-Angular2 Quickstart recommends using NPM to manage Angular libraries. I'm going to stick with it.
-However, ASP.NET Core application we just created stores front end inside **wwwroot** folder. I'm going to keep it this way and use **Gulp** to move dependencies around
+Angular2 Quickstart recommends using NPM to manage Angular libraries. I'm going to follow this recommendation.
+By default an ASP.NET Core application, similar to one we've just created, stores the front end files inside **wwwroot** folder. 
+I'm going to keep it this way and use **Gulp** to move dependencies around and put them in a folder that will be
+automatically deployed with the web application.
 
 ### Add npm folders to gulpfile
 
-Inside **gulpfile.js** you fill find paths variable. We have to modify it to keep source and destination folders of our new dependencies. 
+Inside **gulpfile.js** you will find paths variable.
+We have to modify it to keep source and destination folders of our new dependencies.
 
 ```javascript
 var paths = {
@@ -63,7 +68,9 @@ var paths = {
 
 ### Add clean task for npm folders
 
-The next step would be to use the destination folder we just added to paths and add a new clean task for Gulp which will delete dependencies when we need to refresh our application. 
+The next step would be to use the destination folder, we just added to **paths**, 
+and add a new clean task. This way Gulp will delete dependencies when we 
+need to refresh our application.
 
 ```javascript
 gulp.task("clean:npmlib", function (cb) {
@@ -79,7 +86,8 @@ gulp.task("clean", ["clean:js", "clean:css", "clean:npmlib"]);
 
 ### Create copy tasks for Angular modules and dependencies
 
-In order to move Angular dependencies from **node_module** folder in our project root folder to our **wwwroot** folder we need to copy required dependencies.
+In order to move Angular dependencies from **node_module** folder in our project root folder 
+to **wwwroot** folder we need to copy required files.
 
 ```javascript
 gulp.task("copy:systemjs", function () {
@@ -118,7 +126,7 @@ gulp.task("copy:reflect-metadata", function () {
 });
 ```
 
-Once the copy tasks are created, we can group them.
+After creating the copy tasks, we can group them so they will be more manageable.
 
 ```javascript
 gulp.task('copy-dep',
@@ -131,7 +139,7 @@ gulp.task('copy-dep',
     'copy:angular-in-memory']);
 ```
 
-Now, we can create a new task we will use for publishing our front end app.
+Now, we can create a new task we will use for publishing our front end application.
 It will run the default **min** task and **copy-dep** we've just created.
 
 ```javascript
@@ -143,7 +151,8 @@ From this point we can run `gulp publish` from the root folder of our project to
 
 ### Upgrade project.json file with new tasks
 
-In order to include our new gulp tasks in the Visual Studio build script, we need to modify **project.json** file prepublish scripts.
+In order to include our new gulp tasks in the Visual Studio build script,
+we need to modify **project.json** file prepublish scripts.
 
 ```javascript
 {
@@ -155,12 +164,16 @@ In order to include our new gulp tasks in the Visual Studio build script, we nee
 }
 ```
 
-At this point we should have all our dependencies put in the right place and we can start configuring Angular2 to build our application.
+At this point we should have all our dependencies put in the right place
+and we can start configuring Angular2 to build our application.
 
 ## Step 3 - Configure SystemJS
 
-In order to configure SystemJS we need to create a **systemjs.config.js** file inside **wwwroot** folder.
-I used SystemJS configuration file from **Angular2 - Quickstart** guide. However, in order to load files from a **wwwroot** folder it has to be modified respectively. 
+In order to configure SystemJS we need to create a **systemjs.config.js** file
+inside **wwwroot** folder.
+I used SystemJS configuration file from **Angular2 - Quickstart** guide.
+However, in order to load files from a **wwwroot** folder it has to be modified
+respectively.
 
 ```javascript
 /**
