@@ -25,6 +25,9 @@ v5.1.0
 
 On top of that I'm using Visual Studio 2015 Update 2. Given how quickly **dotnetcore** changes, some steps may look differently.
 
+I've recorded all steps as commits in my Github repository:
+[https://github.com/random82/angular2-aspnet-core](https://github.com/random82/angular2-aspnet-core/commits/master/src/Angular2WebApp) 
+
 ## Step 1 - Create new ASP.NET Core MVC application
 
 Create a new ASP.NET Core Web Application project using Visual Studio.
