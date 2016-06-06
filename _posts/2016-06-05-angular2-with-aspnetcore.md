@@ -9,10 +9,10 @@ categories: angular2, visual studio, dotnet core, ASP.NET Core
 
 ## Intro
 
-This guide is created on a basis of [Angular 2 - Quickstart](https://angular.io/docs/ts/latest/quickstart.html#)
+This guide is created on a basis of [Angular 2 - Quickstart](https://angular.io/docs/ts/latest/quickstart.html#).
 You can refer to the **Angular2 - Quickstart** guide to check exact contents of application and configuration files.
 
-I was using following versions
+In this guide I'm using following versions:
 ```
 λ node -v 
 v5.1.0
@@ -22,11 +22,9 @@ v5.1.0
 1.0.0-preview1-002702
 ```
 
+On top of that I'm using Visual Studio 2015 Update 2. Given how quickly **dotnetcore** changes some steps may look diffrently
 
-For this guide I was using Visual Studio 2015 Update 2. Given how quickly **dotnetcore** changes some steps may look diffrently
-
-
-## Create new ASP.NET Core MVC application
+## Step 1 - Create new ASP.NET Core MVC application
 
 Create a new ASP.NET Core Web Application project using Visual Studio
 
@@ -40,7 +38,7 @@ You should be able to see a similar folder structure being created. I will use t
 
 ![Web Application - default folder structure](../img/Angular2-DefaultFolders.PNG)
 
-## Modify gulpfile.js in the project folder
+## Step 2 - Modify gulpfile.js in the project folder
 
 Angular2 Quickstart recommends using NPM to manage Angular libraries. I'm going to stick with it.
 However, ASP.NET Core application we just created stores front end inside **wwwroot** folder. I'm going to keep it this way and use **Gulp** to move dependencies around
@@ -159,7 +157,7 @@ In order to include our new gulp tasks in the Visual Studio build script, we nee
 
 At this point we should have all our dependencies put in the right place and we can start configuring Angular2 to build our application.
 
-## Configure SystemJS
+## Step 3 - Configure SystemJS
 
 In order to configure SystemJS we need to create a **systemjs.config.js** file inside **wwwroot** folder.
 I used SystemJS configuration file from **Angular2 - Quickstart** guide. However, in order to load files from a **wwwroot** folder it has to be modified respectively. 
@@ -185,7 +183,7 @@ var map = {
 })(this);
 ```
 
-## Create Angular2 application
+## Step 4 - Create Angular2 application
 
 Now, it's time to start building our Angular2 application.
 Since the purpose of this guide is to walk through the integrations with
@@ -210,7 +208,7 @@ import { AppComponent } from './app.component';
 bootstrap(AppComponent);
 ```
 
-## Configure TypeScript transpiler
+## Step 5 - Configure TypeScript transpiler
 
 Create a **tsconfig.json** file in the root directory of your web application project
 
@@ -233,7 +231,7 @@ Rebuild the project with Visual Studio. If everything is configured correctly, y
 
 ![Succesful TypeScript transpilation](../img/Angular2-typescript-build.png)
 
-## Embed your Angular2 application in your ASP.NET Core MVC app
+## Step 6 - Embed your Angular2 application in your ASP.NET Core MVC app
 
 Now it's time to embed our Angular2 component in a Razor view so it will be served by our ASP.NET Core MVC application.
 In order to do it, we'll modify the default layout file to load the libraries required by Angular2.
@@ -283,7 +281,7 @@ file with snippet below.
 <my-app>Loading my app</my-app>
 ```
 
-## Try your application
+## Step 7 - Run your application
 
 Run your application using Visual Studio, if everything is configured properly your default 
 browser should get opened with a new home index view like this:
