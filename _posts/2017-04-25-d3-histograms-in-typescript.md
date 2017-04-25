@@ -8,11 +8,11 @@ tags: [typescript, angular, d3, histogram]
 
 # Drawing histograms using D3 and typescript
 
-If you ever played with D3, you've most likely found [https://bl.ocks.org](https://bl.ocks.org) - Mike Bostock's site where he explains how to draw D3 charts from a very basic to quite complex ones.
+If you ever played with D3, you've most likely found [https://bl.ocks.org](https://bl.ocks.org) - Mike Bostock's site where he explains how to draw D3 charts from  very basic to quite complex ones. On several occasions I followed his examples to draw charts on my sites.
 
-On several occasions I used his examples to draw charts on my sites. However, recently i got into several problems when switching to TypeScript.
+Recently, I started working on a TypeScript app and had to port JS examples to TypeScript.
 
-In order to save you struggle with porting Mike's samples here's [the histogram from his site](https://bl.ocks.org/mbostock/3048450]) translated to TypeScript and wrapped in an Angular2 component.
+I used one of Mike's samples here's [the histogram from his site](https://bl.ocks.org/mbostock/3048450]) to explain how to translate it to TypeScript and wrap in a form of an Angular2 component.
 
 Click [here to find a GIST](https://gist.github.com/random82/79a1bfe61e2243ea7bdf0e5370d169e3#file-histogram-component-ts) with the full source code
 
