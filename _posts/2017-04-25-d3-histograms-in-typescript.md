@@ -79,7 +79,7 @@ interface Histogram<T> {
 }
 ```
 
-So, I've decide to go with the third option and...
+So, I decided to go with the third option and...
 
 ```javascript
 var bins = d3.histogram()
