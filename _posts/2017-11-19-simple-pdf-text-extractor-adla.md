@@ -8,7 +8,7 @@ tags: [adla, azure data lake analytics, c#, u-sql]
 
 # Writing custom PDF extrator for Azure Data Lake Analytics
 
-For some time I work on a pet project that helps me with home budgeting and acts as a training ground for learning new things.
+For sometime now I've been working on a pet project that helps me with home budgeting and acts as a training ground for learning new things.
 
 This time I was trying to experiment with Azure Data Lake Analytics to see if it can help with processing PDFs.
 
@@ -22,11 +22,11 @@ So, I've decided to write my own extractor
 
 ## Putting custom extractor together
 
-I found a really good way of understanding how write Azure Data Lake [UDOs](https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-u-sql-develop-user-defined-operators) (YAY for TLA!) by using Visual Studio 2017 U-SQL sample unit test template, available if you installed Azure Data Lake tooling.
+I found a really good way of understanding how to write Azure Data Lake [UDOs](https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-u-sql-develop-user-defined-operators) (YAY for TLA!) by using Visual Studio 2017 U-SQL sample unit test template, available if you installed Azure Data Lake tooling.
 
 ![ADLA U-SQL Unit Test Sample](../img/adla-unit-test-template.PNG)
 
-This template creates a sample schema and test data for several types of custom U-SQL UDOs. What's really cool, it's not a simple scaffold for a unit test - instead it's a complete example of how to work with and test your UDOs and how the input and output is being processed within your U-SQL script.
+This template creates a sample schema and test data for several types of custom U-SQL UDOs. What's really cool, it's not a simple scaffold for a unit test - instead it's a complete example of how to work with and test your UDOs and how the input and output are being processed within your U-SQL script.
 
 I've created new C# class library for U-SQL app using Visual Studio template. Which pretty much creates C# class library project with two additional dependencies and Visual Studio support for registering the assembly as a U-SQL extension.
 
