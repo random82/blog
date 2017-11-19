@@ -14,7 +14,7 @@ This time I was trying to experiment with Azure Data Lake Analytics to see if it
 
 ## ADLA extractors
 
-Out of the box, Azure Data Lake Analytics supports CSV, TSV and text files. Content of these formats cane be read line by line using EXTRACT function and selecting one of available extractors. After installing [Cognitive extensions](https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-u-sql-cognitive) we get an access to image extractors that support graphic files.
+Out of the box, Azure Data Lake Analytics supports CSV, TSV and text files. Content of these formats can be read line by line using EXTRACT expression and selecting one of available extractors. After installing [Cognitive extensions](https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-u-sql-cognitive) we get an access to image extractors that support graphic files.
 
 In my case I wanted to scrape text from invoices and statements I receive electronically and process the data using ADLA itself. Given OCR being available in Cognitive extension, I initially though about rendering PDFs but it seemed like an overkill to me, especially when my PDFs have nicely organised text layers.
 
@@ -98,3 +98,6 @@ USING Outputters.Csv(outputHeader : true);
 ```
 
 And that's it!
+
+* *Extractor source code [https://gist.github.com/random82/edb3c0738de65a68e685749a6061c348](https://gist.github.com/random82/edb3c0738de65a68e685749a6061c348)*
+* *ADLA Extractors [https://msdn.microsoft.com/en-us/library/azure/mt621320.aspx](https://msdn.microsoft.com/en-us/library/azure/mt621320.aspx)*
