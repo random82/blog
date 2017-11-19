@@ -100,4 +100,4 @@ USING Outputters.Csv(outputHeader : true);
 And that's it!
 
 * *Extractor source code [https://gist.github.com/random82/edb3c0738de65a68e685749a6061c348](https://gist.github.com/random82/edb3c0738de65a68e685749a6061c348)*
-* *ADLA Extractors [https://msdn.microsoft.com/en-us/library/azure/mt621320.aspx](https://msdn.microsoft.com/en-us/library/azure/mt621320.aspx)*
+* *U-SQL built-in extractors [https://msdn.microsoft.com/en-us/library/azure/mt621366.aspx](https://msdn.microsoft.com/en-us/library/azure/mt621366.aspx)*
