@@ -26,7 +26,7 @@ Probably, something like _"hold on, that's if you assume there are no changes to
 
 Let's walk through a sample scenario. I put numbers to my simulation deck and computer said it will take between 7 to 14 sprints to deliver agreed scope.
 
-![Computer said 7 to 14 sprints](..\img\2018-02-22-estimates\chance-deliver-stories.PNG)
+![Computer said 7 to 14 sprints](../img/2018-02-22-estimates/chance-deliver-stories.PNG)
 
 Yup, that's a wide range and it takes a lot of explanation why it comes to that. Regardless of the reasons - it is what it is..
 
@@ -40,7 +40,7 @@ My stats teacher use to say - people get drowned in an average of 1m depth lakes
 
 The big temptation in our situation is to ask a question about the level of acceptable contingency and narrow the range using all possible powers of a wishful productive group thinking. It would look something like that:
 
-![A nice narrow estimate](..\img\2018-02-22-estimates\chance-deliver-stories-smaller-range.PNG)
+![A nice narrow estimate](../img/2018-02-22-estimates/chance-deliver-stories-smaller-range.PNG)
 
 _-"Ah... 3 sprints range... now we're talking. Great job!"_
 
@@ -60,26 +60,31 @@ _-"You wanted a narrow estimate - there you go..."_
 
 ### What about the risk?
 
-![40% risk on both sides](..\img\2018-02-22-estimates\chance-deliver-stories-risk.PNG)
+![40% risk on both sides](../img/2018-02-22-estimates/chance-deliver-stories-risk.PNG)
 
 See the tails outside of the nice and narrow estimate - that's where remaining 39% sits, and guess what that's a risk.
 
 _-"What about the left side? You can finish earlier right?"_
 
-![22% risk of not getting job done](..\img\2018-02-22-estimates\chance-deliver-stories-risk2.PNG)
+![22% risk of not getting job done](../img/2018-02-22-estimates/chance-deliver-stories-risk2.PNG)
 
 You're right, there is a 16% chance that it's going to happen, but fair enough, let's just talk about the right side - when I give you 3 sprints wide estimate around the average, we started to bet and you can win in 4 out of 5 games. Let me demonstrate it differently.
 
-![Cummulative chances](..\img\2018-02-22-estimates\chance-deliver-stories-cummulative-risk.PNG)
+![Cummulative chances](../img/2018-02-22-estimates/chance-deliver-stories-cummulative-risk.PNG)
 
 If we missed the top bar of estimated time or budget, which can happen in 22% of times after sprint 11. There will be part of ork not delivered. There are many ways of dealing with this situation, we could actually remove something from the scope, but for the sake of the argument, let's pretend the backlog consist only from must-have-compliance-or-we-get-sued items. Has to be delivered.
 
 In a scenario like this I would look at the model differently. Instead of looking at chances or cumulative chances of delivering the scope, let's look at the risk of not delivering scope by sprint:
 
-![Not delivering stories](..\img\2018-02-22-estimates\chance-not-deliver-stories-cummulative.PNG)
+![Not delivering stories](../img/2018-02-22-estimates/chance-not-deliver-stories-cummulative.PNG)
 
 Does it help with estimating chances? Even though average says we should deliver it in around 9 sprints - it's close to 50/50. How much money would you put on a flip-coin bet?
 
 ### Better narrow range
 
-![Better narrow range](..\img\2018-02-22-estimates\chance-deliver-stories-range-better.PNG)
+One approach would be to move the nice narrow range to the right side (because we need to give ranges, right) and present an estimate 11 to 13 sprints with 4% of risk. Theoretically it's a nicer approach but in practice we're bloating the estimate in the old waterfall style: team says $X. Project manager (with experience) knows it will be closer to $2\*X and while project sponsor reaches for 4\*$X to the pocket because it's not the first time when the team and project manager got it wrong.
+![Better narrow range](../img/2018-02-22-estimates/chance-deliver-stories-range-better.PNG)
+
+### What to do?
+
+Yes, we have an ugly, wide estimate. It doesn't make anyone happy - trust me. But we can deal with it. First of all - explain the estimation approach, complexity, known factors and potential sources of risks. Secondly - yes, today the estimate is ugly, but guess what, more we learn about the project, we can update it with actual values and it will become more narrow. It's might change it's parameters and move to the left or the right but with cycles short enough we will have enough time to react on these changes. Good news, it doesn't look like it's going to be longer than 14 sprints... There's only 0.0001% chance.
