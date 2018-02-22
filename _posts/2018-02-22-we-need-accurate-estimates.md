@@ -68,11 +68,13 @@ _-"What about the left side? You can finish earlier right?"_
 
 ![22% risk of not getting job done](../img/2018-02-22-estimates/chance-deliver-stories-risk2.png)
 
-You're right, there is a 16% chance that it's going to happen, but fair enough, let's just talk about the right side only - when I give you 3 sprints wide estimate around the average, we started to bet on a game where you can win in 4 out of 5 times. How much money could you put on that given you have only one chance? Let me demonstrate it differently.
+You're right, there is a 16% chance that it's going to happen. But fair enough, let's just talk about the right side only - when I give you 3 sprints wide estimate around the average, we begin to bet on a game in which you can win in 4 out of 5 times. How much money could you put on that if I gave you only one chance? 
+
+Let me demonstrate it differently.
 
 ![Cumulative chances](../img/2018-02-22-estimates/chance-deliver-stories-cummulative-risk.png)
 
-If we missed the top bar of estimated time or budget, which can happen in 22% of times after sprint 11, there would be work not delivered. There are many ways of dealing with this situation, we could actually remove something from the scope, but for the sake of the argument, let's pretend the backlog consist only from must-have-compliance-or-we-get-sued items. Has to be delivered.
+If we missed the top bar of estimated time or budget, which can happen in 22% of times after sprint 11,there would be work not delivered. There are many ways of dealing with this situation, we could actually remove something from the scope, but for the sake of the argument, let's pretend the backlog consist only from must-have-compliance-or-we-get-sued items. Has to be delivered.
 
 In a scenario like this I would look at the model differently. Instead of looking at chances or cumulative chances of delivering the scope, let's look at the risk of not delivering scope by sprint:
 
