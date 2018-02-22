@@ -10,15 +10,13 @@ tags: [agile, stats, estimates, delivery, project, management]
 
 ## Why this range is so wide?
 
-I guess that's something that most of us heard at least one time. We looked at a pile of work with no point of reference and were asked about how long it's going to take. There is an answer which is always wrong and doesn't help anyone: **I don't know**
+I guess that's something that most of us heard at least one time. We got a new work, we haven't clue about, we looked at a pile of work in front of us with no single point of reference and were asked about how long it's going to take. Regardless of the answer, there is one that is universally wrong and terrible and doesn't help anyone: **I don't know**
 
-But sometimes even if we have a clue or apply some estimation technique the results might not be very compelling to your team or stakeholders when the estimate range comes wider than expected (sic!). Some people will come with a witty advice to look at the work complexity - but complexity is only one factor that drives time and budget estimates. There are far more variables and finding them and approximating can be done only by doing the work.
+Most of us when working on projects or initiatives would need to give some estimates. I believe that we can always provide an estimate if we apply some method and in most cases we have more information about a situation that it seems in the first glance. I've never met a single person who asked about single dollar accurate estimate, doesn't matter if they came from waterfall or agile world, we always spoke about ranges.
+
+But sometimes even if we have a clue or apply some estimation technique the results might not be very compelling to your team or stakeholders when the estimate range comes wider than expected (sic!). Some people will come with a witty advice to look at the work complexity - but complexity is only one of many factors that drives time and budget estimates. There are far many more variables and finding them and approximating can be done only by doing the work.
 
 I'm a big fan of Monte Carlo simulations when it comes to estimation. Regardless if you apply Monte Carlo method or use other statistical method to provide a range of time that, in most cases, become a budget of a project or initiative, the range might come quite wide.
-
-Recently I was in the situation when the most accurate estimate I was able to offer was between 7 and 14 sprints. Correct, I could be off twice. That's asking customer: _"I'll need between N and 2*N dollars to get the backlog finished"_. Also, it's a fixed scope job that adds its own twist to the whole story.
-
-Probably, something like _"hold on, that's if you assume there are no changes to backlog"_ might cross your mind. Yeah, fixed scope jobs can bite both ways.
 
 ## _"A more accurate estimate"_
 
