@@ -28,9 +28,10 @@ Let's walk through a sample scenario. I put numbers to my simulation deck and co
 
 ![Computer said 7 to 14 sprints](../img/2018-02-22-estimates/chance-deliver-stories.PNG)
 
-Yup, that's a wide range and it takes a lot of explanation why it comes to that. Regardless of the reasons - it is what it is..
+7 to 14 sprints? that's a wide range and it takes a lot of explanation why it comes to that. Regardless of the reasons - it is what it is...
 
-_-"but can you give us a more accurate estimate?"_
+
+_-"But... can you give us a more accurate estimate?"_
 
 Sure, we can do everything on the paper. The question is what do we want to achieve.
 
