@@ -26,7 +26,7 @@ Let's walk through a sample scenario of estimating a delivery time of imaginary 
 
 ![Computer said 7 to 14 sprints](../img/2018-02-22-estimates/chance-deliver-stories.PNG)
 
-What? 7 to 14 sprints? that's a wide range... and it will take a lot of explanation... We checked the numbers, fix few manually to look better. No changes. Probabilities moved slightly but the verdict remains - 7 to 14 sprints. We bring the result with the full story about estimation method to client and:
+What? 7 to 14 sprints? that's a wide range... and it will take a lot of explanation... We've checked the numbers, fixed few of them manually to look better. No changes. Probabilities moved slightly but the verdict remains - 7 to 14 sprints. We bring the result with the full story about our estimation method to client and what we hear is:
 
 _-"That's nice... but... can you give us a more accurate estimate?"_
 
