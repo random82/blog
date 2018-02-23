@@ -100,9 +100,9 @@ First of all - don't be afraid of the ugly estimate - explain your estimation ap
 
 Secondly - yes, today the estimate is ugly, but guess what, more we learn about the project, we can update it with actual values and it will become more narrow. It's might change it's parameters and move to the left or the right but with cycles short enough we will have enough time to react on these changes. Good news, it doesn't look like it's going to be longer than 14 sprints... There's only 0.0001% chance.
 
-### And what a bout the scope creep?
+### And what about the scope creep?
 
-What if the scope changes from 46 to 60 stories? 
+What if the scope changes from 46 to say 60 stories?
 
 Well the initial model tells you how much time you need to deliver 46 out of 60 stories in the original order. Also, it works at a any given point in time - by saying that, today we know about 46 stories and their initial priorities. When we add another 16 there are few possible scenarios:
 
