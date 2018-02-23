@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  Ok, but we need more accurate estimate
+title:  Ok, but we need more accurate estimates
 date:   2018-02-22 01:00:00 +1100
 category: software delivery
-summary: We need more accurate estimates - dealing with wide an ugly estimate
+summary: Dealing with a wide and ugly estimates
 tags: [agile, stats, estimates, delivery, project, management]
 ---
 
