@@ -1,5 +1,17 @@
 <header class="page-header">
-    <a class="header-link" href="{{ site.baseurl }}/">
-        <p>{{ site.title }}</p>
-    </a>
+    <div class="header-background"></div>
+    <div class="title-wrapper">
+        <a class="header-link" href="{{ site.baseurl }}/">
+            <p>{{ site.title }}</p>
+        </a>
+        <div>
+            <a id="avatar" href="{{ site.baseurl }}/"></a>
+        </div>
+        <nav class="top-nav">
+            <div class="social-buttons">
+                <a class="twitter-icon icon" href="https://twitter.com/{{site.twitter_username}}"></a>
+                <a class="github-icon icon" href="https://github.com/{{site.github_username}}"></a>
+            </div>
+        </nav>
+    </div>
 </header>
