@@ -4,7 +4,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 1.6;
   color: #32383B; }
@@ -59,6 +59,7 @@ a:hover {
   text-align: center;
   background: #56687C url('../img/cover.png') no-repeat 50%;
   background-size: cover;
+  height: 374px;
 }
 
 @media screen and (min-width: 64em) {
@@ -81,6 +82,11 @@ a:hover {
     color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
     transition: 0.4s;
+}
+
+.page-header>a>p {
+  font-size: 42px;
+  text-transform: capitalize;
 }
 
 .header-link:hover {
