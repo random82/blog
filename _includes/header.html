@@ -1,17 +1,29 @@
 <header class="page-header">
-    <div class="header-background"></div>
-    <div class="title-wrapper">
-        <a class="header-link" href="{{ site.baseurl }}/">
-            <p>{{ site.title }}</p>
-        </a>
-        <div>
-            <a id="avatar" href="{{ site.baseurl }}/"></a>
-        </div>
-        <nav class="top-nav">
-            <div class="social-buttons">
-                <a class="twitter-icon icon" href="https://twitter.com/{{site.twitter_username}}"></a>
-                <a class="github-icon icon" href="https://github.com/{{site.github_username}}"></a>
+    <div class="header-background">
+        <div class="title-wrapper">
+            <a class="header-link" href="{{ site.baseurl }}/">
+                <span>{{ site.title }}</span>
+            </a>
+            <div>
+                <a id="avatar" href="{{ site.baseurl }}/"></a>
             </div>
-        </nav>
+        </div>
     </div>
+    <nav class="top-nav">
+        <div class="categories">
+            <span>
+                <a href="/">Agile</a>
+                <a href="/">Code</a>
+            </span>
+            <span class="spacer"></span>
+            <span>
+                <a href="/">Data</a>
+                <a href="/">Cloud</a>
+            <span>
+        </div>
+        <span class="social-buttons">
+            <a class="twitter-icon icon" href="https://twitter.com/{{site.twitter_username}}"></a>
+            <a class="github-icon icon" href="https://github.com/{{site.github_username}}"></a>
+        </span>
+    </nav>
 </header>

@@ -55,20 +55,18 @@ a:hover {
       margin-left: 0; } }
 
 .header-background {
-  background: transparent url('../template/img/cover.png') no-repeat center center;
-  height: 100%;
+  background: #000000 url('../template/img/cover.png') no-repeat center center;
+  height: 375px;
 }
 
 .title-wrapper {
-  transform: translate(0, -80%);
+  transform: translate(0, 50%);
 }
 
 .page-header {
-  color: #FFFFFF;
-  background: #000000;
   text-align: center;
   background-size: cover;
-  height: 374px;
+  height: 100%;
 }
 
 .project-name {
@@ -81,7 +79,7 @@ a:hover {
     transition: 0.4s;
 }
 
-.page-header a p {
+.header-link {
   font-size: 42px;
   z-index: 3;
   background: #000000;
@@ -91,6 +89,25 @@ a:hover {
   padding: 5px 20px;
 }
 
+.top-nav {
+  padding: 10px 50px;
+}
+
+.top-nav .social-buttons {
+  float: right;
+  transform: translate(0, -100%);
+}
+
+.top-nav .social-buttons a {
+  display: inline-block;
+  padding: 5px;
+}
+
+.top-nav .spacer {
+  width: 200px;
+  display: inline-block;
+}
+
 .icon {
   width: 45px;
   height: 45px;
@@ -98,17 +115,35 @@ a:hover {
 }
 
 .twitter-icon {
-  background: transparent url(../template/images/twitter.svg?crc=3981241355) no-repeat left top;
+  background: transparent url(../template/img/twitter.svg?crc=3981241355) no-repeat left top;
 }
 
 .github-icon {
-  background: transparent url(../template/images/github.svg?crc=3981241355) no-repeat left top;
+  background: transparent url(../template/img/github.svg?crc=3981241355) no-repeat left top;
 }
 
 .header-link:hover {
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
     transition: 0.3s;
     text-decoration: none;
+}
+
+.page-header .top-nav a{
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #000000;
+  opacity: 0.5;
+  position: relative;
+  padding: 0 15px;
+}
+
+.page-header .top-nav a:hover {
+  opacity: 0.25;
+  text-decoration: none;
+}
+
+.top-nav .categories {
+  padding: 0 100px;
 }
 
 @media screen and (min-width: 64em) {
@@ -315,6 +350,7 @@ a:hover {
 
 .page-header #avatar {
     z-index: 2;
+    margin-top: 20px;
     display: inline-block;
     border-style: solid;
     border-width: 6px;
