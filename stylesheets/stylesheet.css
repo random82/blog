@@ -60,7 +60,8 @@ a:hover {
 }
 
 .title-wrapper {
-  transform: translate(0, 50%);
+  margin-top: 150px;
+  display: inline-block;
 }
 
 .page-header {
@@ -94,8 +95,8 @@ a:hover {
 }
 
 .top-nav .social-buttons {
-  float: right;
-  transform: translate(0, -100%);
+  float: right;  
+  transform: translate(0, -80%);
 }
 
 .top-nav .social-buttons a {
@@ -111,7 +112,7 @@ a:hover {
 .icon {
   width: 45px;
   height: 45px;
-  opacity: 0.5;
+  margin: 0 10px;
 }
 
 .twitter-icon {
@@ -130,7 +131,7 @@ a:hover {
 
 .page-header .top-nav a{
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: #000000;
   opacity: 0.5;
   position: relative;
@@ -350,7 +351,7 @@ a:hover {
 
 .page-header #avatar {
     z-index: 2;
-    margin-top: 20px;
+    margin-top: 0.8rem;
     display: inline-block;
     border-style: solid;
     border-width: 6px;
@@ -363,7 +364,21 @@ a:hover {
     background-size: cover;
 }
 
-@media (min-width: 56em)
+@media screen and (min-width: 84rem)
+{
+  .top-nav .spacer {
+    display: none;
+  }
+
+  #avatar{
+    position: relative;
+    width: 256px;
+    height: 256px;
+    margin-left: 42rem;
+  }
+}
+
+@media screen and  (min-width: 56rem) and (max-width: 84rem)
 {
   #avatar{
     position: relative;
@@ -372,7 +387,7 @@ a:hover {
   }
 }
 
-@media (max-width: 56em) {
+@media (max-width: 56rem) {
   #avatar {
     display: none;
   }
