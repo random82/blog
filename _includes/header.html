@@ -1,44 +1,52 @@
 <header class="page-header">
-    <div class="mobile-menu">
+    <div class="mobile-menu-wrapper">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger"></label>
         <ul class="navigation">
-            <li class="nav-item"><a href="#">Agile</a></li>
-            <li class="nav-item"><a href="#">Code</a></li>
-            <li class="nav-item"><a href="#">Data</a></li>
-            <li class="nav-item"><a href="#">Cloud</a></li>
+            <li class="nav-item">
+                <a href="#">Agile</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Code</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Data</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Cloud</a>
+            </li>
         </ul>
-    </div>
-    <div class="header-background">
-        <div class="title-wrapper">
-            <a class="header-link" href="{{ site.baseurl }}/">
-                <span>{{ site.title }}</span>
-            </a>
-            <div>
-                <a id="avatar" href="{{ site.baseurl }}/"></a>
+        <div class="menu-wrapper">
+            <div class="header-background">
+                <div class="title-wrapper">
+                    <a class="header-link" href="{{ site.baseurl }}/">
+                        <span>{{ site.title }}</span>
+                    </a>
+                    <div>
+                        <a id="avatar" href="{{ site.baseurl }}/"></a>
+                    </div>
+                </div>
             </div>
+            <nav class="top-nav">
+                <div class="nav-side-left nav-side"></div>
+                <div class="categories">
+                    <span class="cat-left">
+                        <a href="/">Agile</a>
+                        <a href="/">Code</a>
+                    </span>
+                    <span class="spacer"></span>
+                    <span class="cat-right">
+                        <a href="/">Data</a>
+                        <a href="/">Cloud</a>
+                        <span>
+                </div>
+                <div class="nav-side-right nav-side">
+                    <span class="social-buttons">
+                        <a class="twitter-icon icon" href="https://twitter.com/{{site.twitter_username}}"></a>
+                        <a class="github-icon icon" href="https://github.com/{{site.github_username}}"></a>
+                    </span>
+                </div>
+            </nav>
         </div>
     </div>
-    <nav class="top-nav">
-        
-        <div class="nav-side-left nav-side"></div>
-        <div class="categories">
-            <span class="cat-left">
-                <a href="/">Agile</a>
-                <a href="/">Code</a>
-            </span>
-            <span class="spacer"></span>
-            <span class="cat-right">
-                <a href="/">Data</a>
-                <a href="/">Cloud</a>
-            <span>
-        </div>
-        <div class="nav-side-right nav-side">
-            <span class="social-buttons">
-                <a class="twitter-icon icon" href="https://twitter.com/{{site.twitter_username}}"></a>
-                <a class="github-icon icon" href="https://github.com/{{site.github_username}}"></a>
-            </span>
-        </div>
-        
-    </nav>
 </header>
