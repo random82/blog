@@ -2,7 +2,8 @@
 layout: post
 title:  Do we really need it right now? 
 date:   2016-04-26 01:53:18 +1100
-categories: continuous improvement kaizen
+category: agile
+tags: [continuous improvement, kaizen]
 ---
 
 # So, I've noticed you're working on...

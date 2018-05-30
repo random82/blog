@@ -2,10 +2,10 @@
 layout: post
 title:  Ok, but we need more accurate estimates
 date:   2018-02-22 01:00:00 +1100
-category: software delivery
+category: agile
 summary: Dealing with a wide and ugly estimates
 image: /img/2018-02-22-estimates/chance-deliver-stories-risk2.png
-tags: [agile, stats, estimates, delivery, project, management]
+tags: [agile, estimates, delivery, project management]
 ---
 
 # We need more accurate estimates

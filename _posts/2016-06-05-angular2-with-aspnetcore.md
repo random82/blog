@@ -2,7 +2,8 @@
 layout: post
 title:  Configuring Angular2 with ASP.NET Core 
 date:   2016-06-05 02:26:18 +1100
-categories: angular2, visual studio, dotnet core, ASP.NET Core
+category: code
+tags: [angular, visual studio, dotnet core, ASP.NET Core]
 ---
 
 # Angular2 with ASP.NET Core - Step-by-step guide

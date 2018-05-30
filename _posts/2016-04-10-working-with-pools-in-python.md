@@ -2,7 +2,8 @@
 layout: post
 title:  Working with Pools in python
 date:   2016-04-10 01:53:18 +1100
-categories: python parallel
+category: code
+tags: [python, multithreading]
 ---
 
 # Problem - long running single-threaded simulations

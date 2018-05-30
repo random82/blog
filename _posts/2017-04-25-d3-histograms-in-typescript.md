@@ -2,7 +2,7 @@
 layout: post
 title:  Drawing histograms using D3 and typescript
 date:   2017-04-25 01:00:00 +1100
-category: software development
+category: code
 tags: [typescript, angular, d3, histogram]
 ---
 
