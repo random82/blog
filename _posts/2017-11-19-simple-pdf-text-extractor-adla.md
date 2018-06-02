@@ -2,7 +2,7 @@
 layout: post
 title:  Simple PDF text extractor for Azure Data Lake Analytics
 date:   2017-11-19 01:00:00 +1100
-category: data
+category: [data, cloud]
 tags: [adla, azure data lake analytics, c#, u-sql, data, cloud]
 ---
 

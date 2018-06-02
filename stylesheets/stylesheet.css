@@ -35,6 +35,33 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }
 
+.tag-box {
+  list-style: none;
+}
+
+.tag-box li {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 7px;
+  opacity: 0.5;
+}
+
+.tag-box li a {
+  color: black;
+}
+
+.tag-box li .counter {
+  color: black;
+  border-radius: 100%;
+  vertical-align: middle;
+  top: -1px;
+  position: relative;
+  width: 2rem;
+  display: inline-block;
+  text-align: center;
+  border: solid 1px;
+}
+
 @media screen and (min-width: 64em) {
   .btn {
     padding: 0.75rem 1rem; } }
