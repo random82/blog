@@ -20,7 +20,7 @@ truncate_words: 150
 
 google_analytics: UA-63511504-2
 
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 # Build settings
 markdown: kramdown
